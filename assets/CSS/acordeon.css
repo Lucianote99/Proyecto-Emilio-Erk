@@ -1,0 +1,17 @@
+.body{
+    background-color: rgb(29, 27, 27);
+}
+
+.accordion-item {
+    border: 2px solid rgba(0, 0, 0, .125); /* Thicker border */
+    margin-bottom: 10px; /* More spacing between items */
+  }
+  
+  .accordion-header button {
+    padding: 1rem 1.25rem; /* Larger padding for the button */
+    font-size: 1.1rem; /* Slightly larger font size for the button text */
+  }
+  
+  .accordion-body {
+    padding: 1.5rem; /* Larger padding for the body content */
+  }

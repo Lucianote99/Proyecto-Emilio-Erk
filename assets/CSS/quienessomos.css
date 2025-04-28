@@ -1,0 +1,62 @@
+.imagen-portada {
+    width: 100%; 
+    display: block; 
+    
+    height: 700px;
+    overflow: hidden;
+    margin-top: 0%;
+}
+
+.seccion-color {
+    background-color: #dcd96c;
+    padding: 40px; 
+    position: relative; 
+    text-align: center; 
+  }
+
+  body{
+    background-color: rgb(36, 31, 31) !important;
+  }
+
+  .seccion-color2{
+    background-color:  rgb(36, 31, 31);
+    padding: 40px; 
+    position: relative; 
+    text-align: center; 
+    color: rgb(227, 220, 220);
+  }
+
+  .contenedor-imagen-translucido {
+    position: relative; /* Establece el contexto de posicionamiento para las capas internas */
+    width: 100%; /* O el ancho que desees */
+    /* Asegúrate de que tenga una altura adecuada para tu contenido */
+    margin-bottom: 50px;
+  }
+  
+  .contenedor-imagen-translucido img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Evita espacios extra debajo de la imagen */
+  }
+  
+  .capa-translucida {
+    position: absolute; /* Permite superponer esta capa sobre la imagen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo con transparencia (RGBA) */
+    /* El último valor (0.5) es la opacidad (0 = completamente transparente, 1 = completamente opaco) */
+    display: flex; /* Para centrar el texto fácilmente */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    color: white; /* Color del texto encima */
+    text-align: center; /* Alinea el texto al centro */
+  }
+  
+  .texto-encima {
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+  }
+
+ 

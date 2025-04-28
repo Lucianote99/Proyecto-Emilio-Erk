@@ -1,7 +1,6 @@
 <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/CSS/body.css" rel = "stylesheet">
-    <link href="assets/CSS/carrusel.css" rel = "stylesheet">
-    <link href="assets/CSS/card.css" rel = "stylesheet">
+   
+    <link href="assets/CSS/quienessomos.css" rel = "stylesheet">
 
 
 <style>
@@ -34,25 +33,24 @@
     text-align: center;
     border-radius: 10px;
     margin-bottom: 30px;
+    background-color: rgb(36, 31, 31) !important;
 }
 </style>
 
 
 
-
-<div class="container">
-
-  <h1>¿Quienes Somos?</h1>
-  <p class="text-algo text-justify text-capitalize text-center fs-5"> DK es una empresa de comida rápida en pleno proceso de expansión, reconocida por ofrecer productos frescos, sabrosos y accesibles. Con una propuesta moderna y dinámica, combina calidad, velocidad y atención personalizada para satisfacer los gustos de un público cada vez más exigente.
-
-Desde sus inicios, la empresa se ha enfocado en crear una experiencia culinaria ágil sin perder el sabor auténtico de cada plato. Su menú incluye hamburguesas artesanales, lomitos, pizzas, ensaladas, postres y bebidas, elaborados con ingredientes seleccionados y un fuerte compromiso con la higiene y la excelencia.
-
-Actualmente, DK cuenta con un equipo de más de 25 personas distribuidas entre cocina, atención al cliente, repartidores y gestión operativa, trabajando en conjunto para asegurar un servicio rápido y de calidad.
-
-La empresa se encuentra en un ambicioso proceso de crecimiento, con nuevas sucursales en desarrollo y la incorporación de servicios como pedidos online, entregas a domicilio y atención para eventos. Su visión es convertirse en una de las principales cadenas de comida rápida del país, manteniendo siempre sus valores de cercanía, calidad y sabor. </p>
+<body>
+<div class="container-fluid"> <img src="assets/img/Quien2.png" alt="Imagen de Portada" class="imagen-portada">
+</div >
+<div class= "seccion-color">
+<h1>¿Qué hacemos?</h1>
+  <h5>Lo que tratamos de lograr en DK Fast Food, es no solo un ambiente familia o la mejor calidad en la comida, sino el mejor ambiente posible para sentarte a disfrutar de un delicioso sabor que acompañe aquellos recuerdos que mas disfrutaste en este lugar solo o acompañado</h5>
 </div>
 <script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
- <div class="album py-5 bg-body-tertiary">
+<div class= "seccion-color2">
+
+  <h5>Gracias a la inspiración de un pequeño grupo de amigos hoy en dia podemos disfrutar de este enorme lugar, de pasar a ser un proyecto, a formar parte de nuestras vidas, DK Fast Food es mas que una simple cadena de hamburguesas, es el lugar al cual siempre queres volver a comerte la mejor hamburguesa, la seleccion cuidadosa del staff, de nuestros cocineros, encargador, comnity managers, todos los que forman parte hoy, nos llenan de orgullo </h5> 
+<div class="album py-5 bg-body-tertiary">
     <div class="container">
     	<h1 class="text-light bg-dark">CONOCE A NUESTRO STAFF</h1>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -86,6 +84,28 @@ La empresa se encuentra en un ambicioso proceso de crecimiento, con nuevas sucur
         </div> 
     </div>
 </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card text-bg-dark contenedor-imagen-translucido">
+        <img src="assets/img/Sucursal.jpeg" class="card-img" alt="...">
+        <div class="card-img-overlay capa-translucida">
+          <h5 class="card-title texto-encima">Lugar</h5>
+          <p class="card-text texto-encima">Al ser una empresa en expanción todavia contamos con una sola sucursal, esta cuenta con lugar para comer en interior y exterior, dentro de la misma se pueden comprar, las comidas proporcionadas por la marca, bebidas y postres, y tambien conttamos con el autoDK</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card text-bg-dark contenedor-imagen-translucido">
+        <img src="assets/img/Vaquitas.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay capa-translucida">
+          <h5 class="card-title texto-encima">El corazón de nuestras hamburguesas</h5>
+          <p class="card-text texto-encima">En DK la calidad comienza desde el origen. Seleccionamos cuidadosamente carne de raza Angus, reconocida mundialmente por su excepcional terneza, jugosidad y marmoleo superior. Nuestra carne es importada directamente para garantizar un estándar premium en cada bocado. Pero la magia no termina ahí: en nuestra cocina, la preparamos con dedicación y un toque especial, un "sazón mágico" que realza su sabor natural y la convierte en una experiencia única en cada una de nuestras deliciosas hamburguesas. ¡Descubre la diferencia que una carne de calidad y nuestra pasión pueden ofrecer!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <div class="container">
@@ -96,12 +116,12 @@ La empresa se encuentra en un ambicioso proceso de crecimiento, con nuevas sucur
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <div class="text-center">
                 <p class="display-3 fw-semibold">UBICACIÓN</p>
-                <p class="fw-normal">Dirección: Fructuoso Rivera 3099, Córdoba</p>
+                <p class="fw-normal">Dirección: Lavalle 944, Corrientes Capital</p>
                 <p class="fw-normal">Telefono: +011 3765-048153</p>
                 <p class="fw-normal">DK S.A.</p>
             </div>
         </div>
     </div>
 </div>
+</body>
 
-<link rel="stylesheet" href="assets/CSS/estilo.css">

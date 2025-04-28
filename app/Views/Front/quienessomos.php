@@ -3,43 +3,11 @@
     <link href="assets/CSS/quienessomos.css" rel = "stylesheet">
 
 
-<style>
-/* Tarjetas del staff */
-.tarjeta-quienes .card {
-    border: 2px solid #ffc107; /* Borde amarillo */
-    border-radius: 10px;
-    background-color: #fff8e1; /* Fondo suave */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.tarjeta-quienes .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    border-color: #ffca2c;
-}
-
-/* Imagen cuadrada responsiva */
-.sq-im {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 10px;
-}
-
-/* Título del staff */
-.album h1 {
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    background-color: rgb(36, 31, 31) !important;
-}
-</style>
 
 
 
-<body>
+
+
 <div class="container-fluid"> <img src="assets/img/Quien2.png" alt="Imagen de Portada" class="imagen-portada">
 </div >
 <div class= "seccion-color">
@@ -47,9 +15,11 @@
   <h5>Lo que tratamos de lograr en DK Fast Food, es no solo un ambiente familia o la mejor calidad en la comida, sino el mejor ambiente posible para sentarte a disfrutar de un delicioso sabor que acompañe aquellos recuerdos que mas disfrutaste en este lugar solo o acompañado</h5>
 </div>
 <script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<div class= "seccion-color2">
 
+<div class = "seccion">
   <h5>Gracias a la inspiración de un pequeño grupo de amigos hoy en dia podemos disfrutar de este enorme lugar, de pasar a ser un proyecto, a formar parte de nuestras vidas, DK Fast Food es mas que una simple cadena de hamburguesas, es el lugar al cual siempre queres volver a comerte la mejor hamburguesa, la seleccion cuidadosa del staff, de nuestros cocineros, encargador, comnity managers, todos los que forman parte hoy, nos llenan de orgullo </h5> 
+  
+</div>
 <div class="album py-5 bg-body-tertiary">
     <div class="container">
     	<h1 class="text-light bg-dark">CONOCE A NUESTRO STAFF</h1>
@@ -123,5 +93,5 @@
         </div>
     </div>
 </div>
-</body>
+
 

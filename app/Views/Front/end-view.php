@@ -4,8 +4,8 @@
     
    
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="<?php echo base_url('assets/CSS/end-nav.css'); ?>">>
+    
+    <link rel="stylesheet" href="<?php echo base_url('assets/CSS/end-nav.css'); ?>">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
      <link href="assets/CSS/body.css" rel = "stylesheet">
 </head>

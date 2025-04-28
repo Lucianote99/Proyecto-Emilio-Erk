@@ -8,25 +8,7 @@
 
   </head>
 
-<style>
-  .accordion-button {
-    background-color: red;
-    color: blue;
-  }
 
-  .accordion-button:not(.collapsed) {
-    background-color: red;
-    color: blue;
-  }
-
-  .accordion-button:focus {
-    box-shadow: none;
-  }
-
-  .accordion-body{
-    background-color: blue;
-  }
-</style>
 <body>
 <div class="container mt-5 mb-5 d-flex flex-column align-items-center" style="background-color: #CC6633; width: 80%;">
 

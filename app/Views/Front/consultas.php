@@ -1,14 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
 <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/CSS/body.css" rel = "stylesheet">
     <link href="assets/CSS/carrusel.css" rel = "stylesheet">
     <link href="assets/CSS/card.css" rel = "stylesheet">
+    <link href="assets/CSS/consultas.css" rel = "stylesheet">
+    </head>
 
 
-
-<!DOCTYPE html>
-<html>
-    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<div class="container mt-5 mb-5 d-flex flex-column align-items-center" style="background-color: #CC6633; width: 65%">
+   
+    <body>
+<div class="container mt-5 mb-5 d-flex flex-column align-items-center" style="background-color: #c5ac8e;; width: 100%">
 
   <div class="center-form"> <!-- Alinea el contenido en el centro -->
   <div class="w-50"> <!-- Ajusta el ancho del formulario -->
@@ -63,5 +67,6 @@
   </div>
  </div>
 </div>       
-<link rel="stylesheet" href="assets/CSS/estilo.css">
+<script rel="stylesheet" src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

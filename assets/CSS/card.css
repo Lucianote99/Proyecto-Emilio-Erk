@@ -6,7 +6,7 @@
     margin-bottom: 30px; /* Agrega un poco de espacio entre las tarjetas */
     background-color: #000000d5;
     
-    border-radius: 10px;
+  
     box-shadow:
         0 0 10px #FF4081, /* Color base del "neón" */
         0 0 10px #FF4081,
@@ -147,4 +147,8 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra para destacar */
 .card-verde:hover .descripcion {
  opacity: 1;
 
+}
+
+.card-header2{
+  color: rgb(234, 227, 227);
 }

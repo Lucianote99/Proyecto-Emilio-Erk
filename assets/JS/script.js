@@ -15,3 +15,20 @@ document.addEventListener('DOMContentLoaded', function() {
         lastScrollTop = scrollTop;
     });
 });
+
+let lastScrollTop = 0;
+const footer = document.querySelector('.footer');
+
+window.addEventListener('scroll', function() {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // Scrolling down
+    footer.classList.add('footer--hidden');
+  } else {
+    // Scrolling up
+    footer.classList.remove('footer--hidden');
+  }
+
+  lastScrollTop = scrollTop;
+});

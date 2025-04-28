@@ -16,41 +16,32 @@
   <body>
     
    
-        <div class="container"><div class= "section-cards"><div class="row justify-content-center"> <div class="col-sm-12 col-md-10"> <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="card2">
-                  <img class="card-img" src="assets/img/KyriosBurguer.jpg" alt="25">
-                  <div class="card-body">
-                  <p class="text-capitalize text-center">Kyrios Buguers</p>
-                  
-                  <div class="group d-flex justify-content-center">
-                    
-                    <a href="#" class="btn btn-secondary text-center">Comprar</a>
-                  </div>
-                </div>
-                </div>
-                <div class="card2">
-                  <img class="card-img" src="assets/img/Papas.jpg"alt="50">
-                  <div class="card-body">
-                  <p class="text-capitalize text-center">Cryspi Fries</p>
-                  
-                  <div class="group d-flex justify-content-center">
-                    
-                    <a href="#" class="btn btn-secondary">Comprar</a>
-                  
-                  </div>
-                 </div>
-                 </div>
-                <div class="card2">
-                  <img class="card-img" src="assets/img/Nachos.jpg" alt="25">
-                  <div class="card-body">
-                    <p class="text-capitalize text-center">Nachos Chachos</p>
-                 
-                  <div class="group d-flex justify-content-center">
-                  
-                  <a href="#" class="btn btn-secondary">Comprar</a>
-                </div>
+  <div class="container">
+  <div class="section-cards">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-10 d-flex justify-content-center">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center">
+
+          <div class="card2">
+            <img class="card-img" src="assets/img/KyriosBurguer.jpg" alt="Kyrios Burgers">
+            <div class="card-body">
+              <p class="text-capitalize text-center">Kyrios Burgers</p>
+              <div class="group d-flex justify-content-center">
+                <a href="#" class="btn btn-secondary text-center">Comprar</a>
               </div>
+            </div>
+          </div>
+
+          <div class="card2">
+            <img class="card-img" src="assets/img/Papas.jpg" alt="Cryspi Fries">
+            <div class="card-body">
+              <p class="text-capitalize text-center">Cryspi Fries</p>
+              <div class="group d-flex justify-content-center">
+                <a href="#" class="btn btn-secondary text-center">Comprar</a>
               </div>
+            </div>
+          </div>
+          
               <div class="card2">
                   <img class="card-img" src="assets/img/LomitoNr.jpg"  alt="25">
                   <div class="card-body">
@@ -114,6 +105,9 @@
       </div>
     </div>
 </div>
+      </body>
+  
+</html>
       </body>
   
 </html>

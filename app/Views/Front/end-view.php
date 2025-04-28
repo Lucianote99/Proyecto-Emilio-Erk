@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/CSS/end-nav.css'); ?>">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
      <link href="assets/CSS/body.css" rel = "stylesheet">
-<<<<<<< HEAD
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-=======
->>>>>>> 57f11dafd88e26af66f51e566ea75ddea7a7e574
 </head>
 <body>
 <footer class="footer">
@@ -32,7 +29,6 @@
                 </ul>
             </div>
             <div class="footer-links">
-<<<<<<< HEAD
     <h4>Seguinos</h4>
     <div class="social-links">
         <ul>
@@ -43,14 +39,6 @@
     </div>
 </div>       
                     
-=======
-                <h4>Seguinos</h4>
-                <ul class="social-links">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="social-media-link"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li class="social-media-link"><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
->>>>>>> 57f11dafd88e26af66f51e566ea75ddea7a7e574
             </div>
             <div class="footer-links">
                 <h4>Visitanos</h4>

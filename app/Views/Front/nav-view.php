@@ -67,6 +67,11 @@
 </nav>
 
       <script src="<?php echo base_url('assets/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+<<<<<<< HEAD
       <script src="<?php echo base_url('assets/JS/script.js') ?>"></script>
     </body>   
 </html>
+=======
+     
+  
+>>>>>>> 57f11dafd88e26af66f51e566ea75ddea7a7e574

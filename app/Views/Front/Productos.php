@@ -1,7 +1,7 @@
 <script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   
 <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    
+<link href="assets/CSS/body.css" rel = "stylesheet">
     <link href="assets/CSS/carrusel.css" rel = "stylesheet">
     <link href="assets/CSS/card.css" rel = "stylesheet">
     
@@ -20,7 +20,7 @@
                 <div class="card2">
                   <img class="card-img" src="assets/img/KyriosBurguer.jpg" alt="25">
                   <div class="card-body">
-                  <p class="text-capitalize text-center">Hamburguesa Completa.</p>
+                  <p class="text-capitalize text-center">Kyrios Buguers</p>
                   
                   <div class="group d-flex justify-content-center">
                     
@@ -31,7 +31,7 @@
                 <div class="card2">
                   <img class="card-img" src="assets/img/Papas.jpg"alt="50">
                   <div class="card-body">
-                  <p class="text-capitalize text-center">Sandwich de Lomo</p>
+                  <p class="text-capitalize text-center">Cryspi Fries</p>
                   
                   <div class="group d-flex justify-content-center">
                     
@@ -43,7 +43,7 @@
                 <div class="card2">
                   <img class="card-img" src="assets/img/Nachos.jpg" alt="25">
                   <div class="card-body">
-                    <p class="text-capitalize text-center">Hamburguesa Simple.</p>
+                    <p class="text-capitalize text-center">Nachos Chachos</p>
                  
                   <div class="group d-flex justify-content-center">
                   
@@ -54,7 +54,7 @@
               <div class="card2">
                   <img class="card-img" src="assets/img/LomitoNr.jpg"  alt="25">
                   <div class="card-body">
-                    <p class="text-capitalize text-center">Pizza</p>
+                    <p class="text-capitalize text-center">Lomito Ryan</p>
                   
                   <div class="group d-flex justify-content-center">
                   
@@ -65,7 +65,7 @@
                 <div class="card2">
                   <img class="card-img" src="assets/img/GodzillaBurguer.jpg"50">
                   <div class="card-body">
-                  <p class="text-capitalize text-center">Ensadala Simple</p>
+                  <p class="text-capitalize text-center">Godzilla Burguer</p>
                   
                   <div class="group d-flex justify-content-center">
                     
@@ -76,7 +76,7 @@
                 <div class="card2">
                   <img class="card-img" src="assets/img/PolloB.jpg" alt="50">
                   <div class="card-body">
-                  <p class="text-capitalize text-center">Ensalada Completa</p>
+                  <p class="text-capitalize text-center">Spicy Cryspi Chiken</p>
                  
                   <div class="group d-flex justify-content-center">
                     
@@ -87,7 +87,18 @@
                 <div class="card2">
                   <img class="card-img" src="assets/img/Postres.jpg" alt="50">
                   <div class="card-body">
-                  <p class="text-capitalize text-center">Helado.</p>
+                  <p class="text-capitalize text-center">Che  sscakes</p>
+                  
+                  <div class="group d-flex justify-content-center">
+                    
+                    <a href="#" class="btn btn-secondary">Comprar</a>
+                  </div>
+                </div>
+                </div>
+                <div class="card2">
+                  <img class="card-img" src="assets/img/nachio chacho.jpg" alt="50">
+                  <div class="card-body">
+                  <p class="text-capitalize text-center">Muñecos Coleccionables</p>
                   
                   <div class="group d-flex justify-content-center">
                     

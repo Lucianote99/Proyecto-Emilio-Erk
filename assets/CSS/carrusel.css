@@ -1,7 +1,7 @@
 .carousel-item img{
-    width: 200%;
-    height: 70%;
-    object-fit:scale-down;
+    width: 50%;
+    height: 20%;
+    object-fit:contain;
 }
 
 .carousel-item {

@@ -26,13 +26,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="assets/img/ComboM.png" class="d-block w-100" alt="...">
+      <img src="assets/img/Combo4.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
       <img src="assets/img/Merch3.jpeg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="assets/img/trabaCN.jpeg" class="d-block w-100" a   lt="...">
+      <img src="assets/img/TBCN2.jpg" class="d-block w-100" a   lt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -90,38 +90,44 @@
     </div>
   </div>
 </div>
-<div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    </div>
-  <div class="col">
-    </div>
-  <div class="col">
-    </div>
 </div>
 
-
- 
-  <div class="card3 ">
-    <img src="assets/img/Juguetes.jpg" class="card-img-top" alt="...">
+<div class="row row-cols-1 row-cols-md-2 g-4">
+<div class="col">
+  <div class="card-verde">
+    <img src="assets/img/nachio chacho.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      <h3 class="card-title">Figuras Coleccionables</h3>
+     
+    </div>
+    <div class="descripcion">
+      <p>¡Adquiera a Nacho Chacho y a Burgini!</p>
     </div>
   </div>
-  <div class="card3">
-
-    <img src="assets/img/Reciclaje.png" class="card-img-top" alt="...">
+</div>
+<div class="col">
+  <div class="card-verde">
+    <img src="assets/img/Reciclaje1.png" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">OMG!</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      <h3 class="card-title">Onda verde</h3>
+    </div>
+    <div class="descripcion">
+      <p>Ahora todos los materiales que podrian ser plasticos dentro de nuestras sucursales, serán biodegrdables</p>
     </div>
   </div>
 </div>
 
+</div>
 
+<div class="card-suc text-bg-dark">
+  <img src="assets/img/Sucursal.jpeg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+  
 
+  
+</div>
 
+  
+  
 
 </html> 

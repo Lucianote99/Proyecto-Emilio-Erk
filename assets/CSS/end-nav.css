@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    color: #050505 !important;
 }
 
 main {
@@ -10,12 +11,13 @@ main {
 }
 
 .footer {
-    background-color: rgb(233, 233, 202) !important;
+    background-color: rgb(138, 138, 95) !important;
     padding: 15px 0;
     margin-top: auto;
     z-index: 10;
     text-align: center;
     width: 100%;
+    color: #050505 !important;
 }
 
 .foo-container {
@@ -36,7 +38,7 @@ main {
 
 .footer-links ul li a {
     text-decoration: none;
-    color: #333;
+    color: #0b0a0a !important ;
     font-size: 16px;
 }
 
@@ -46,7 +48,7 @@ main {
 
 .social-links li a {
     font-size: 20px;
-    color: #333;
+    color: #030202 !important;
 }
 
 .social-links li a:hover {
@@ -62,3 +64,4 @@ main {
         font-size: 14px;
     }
 }
+

@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="">
-      
+      <link href="assets/CSS/estnavbar.css" rel = "stylesheet">
       <link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
       
 
@@ -30,82 +30,42 @@
           <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
         </symbol>
       </svg>
-
-      <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-                id="bd-theme"
-                type="button"
-                aria-expanded="false"
-                data-bs-toggle="dropdown"
-                aria-label="Toggle theme (auto)">
-          <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-          <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <div class="container-fluid justify-content-center">
+        <a class="navbar-brand" href="<?php echo base_url('DK') ?>">DK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-          <li>
-            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-              <svg class="bi me-2 opacity-50" width="1em" height="1em">
-                <use href="#sun-fill"></use>
-              </svg>
-              Light
-              <svg class="bi ms-auto d-none" width="1em" height="1em">
-                <use href="#check2"></use>
-              </svg>
-            </button>
-          </li>
-          <li>
-            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-              <svg class="bi me-2 opacity-50" width="1em" height="1em">
-                <use href="#moon-stars-fill"></use>
-              </svg>
-              Dark
-              <svg class="bi ms-auto d-none" width="1em" height="1em">
-                <use href="#check2"></use>
-              </svg>
-            </button>
-          </li>
-          <li>
-            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-              <svg class="bi me-2 opacity-50" width="1em" height="1em">
-                <use href="#circle-half"></use>
-              </svg>
-              Auto
-              <svg class="bi ms-auto d-none" width="1em" height="1em">
-                <use href="#check2"></use>
-              </svg>
-            </button>
-          </li>
-        </ul>
-      </div>
-
-      
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4"> <div class="container-fluid">
-              <a class="navbar-brand" href="<?php echo base_url('DK') ?>">DK</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                  <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="<?php echo base_url('Productos') ?>">Productos</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="<?php echo base_url('Comercializacion') ?>">Comercializacion</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="<?php echo base_url('quienessomos') ?>">¿Quines Somos?</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="<?php echo base_url('consultas') ?>">Consultas</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="<?php echo base_url('login') ?>">Login</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="<?php echo base_url('Productos') ?>">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo base_url('Comercializacion') ?>">Comercializacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo base_url('quienessomos') ?>">¿Quines Somos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo base_url('consultas') ?>">Consultas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo base_url('login') ?>">Login</a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex">
+            <a class="nav-link" href="<?php echo base_url('assets/img/Carrito.jpg') ?>">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.58 6.427A.5.5 0 0 1 13 11h-9.5a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 5h8.17l1.313-5H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                <span class="visually-hidden">Carrito</span>
+            </a>
+        </div>
+    </div>
+</nav>
 
       <script src="<?php echo base_url('assets/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
-      <script src="<?php echo base_url('assets/JS/script.js') ?>"></script>
+     
   

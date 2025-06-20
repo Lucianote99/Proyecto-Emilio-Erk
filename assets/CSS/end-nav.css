@@ -29,9 +29,8 @@ main {
 }
 
 .foo-container {
-    width: 100%;
-    padding: 20px; /* Añade un poco de padding dentro del contenedor del footer */
-    box-sizing: border-box;
+   max-width: 1200px;
+   margin: 0 auto;
 }
 
 /* ... tus otros estilos del footer ... */
@@ -111,3 +110,24 @@ main {
     grid-column: 1 / -1; /* Ocupa todo el ancho en el grid */
     text-align: center; /* Mantiene el centrado de la línea de copyright */
 }
+
+/*
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer.footer {
+    margin-top: auto;
+    background-color: black; /* Ajusta al color que prefieras */
+/*    padding: 20px 0;
+      border-top: 1px solid #ddd;
+}
+*/

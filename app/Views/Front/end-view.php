@@ -11,20 +11,24 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
+<main>
+    
+</main>    
 <footer class="footer">
     <div class="foo-container">
         <div class="footer-row" style="display: flex; justify-content: space-between; align-items: center;">
             <div class="footer-links">
                 <h4>DK</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="<?php echo base_url('DK') ?>">Home</a></li> 
+                    <li><a href="<?php echo base_url('FAQs') ?>">FAQs</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <h4>Ayuda</h4>
                 <ul>
-                    <li><a href="<?php echo base_url('Consultas') ?>">Consultas</a></li>
+                    <li><a href="<?php echo base_url('consultas') ?>">Consultas</a></li>
                     <li><a href="<?php echo base_url('terminosycondiciones') ?>">Términos y Condiciones</a></li>
                 </ul>
             </div>
@@ -32,21 +36,16 @@
     <h4>Seguinos</h4>
     <div class="social-links">
         <ul>
-            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-            <li class="social-media-link"><a href=""><i class="fab fa-instagram"></i></a></li>
-            <li class="social-media-link"><a href=""><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="social-media-link"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+            <li class="social-media-link"><a href="https://ar.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
         </ul>
     </div>
 </div>       
                     
             </div>
-            <div class="footer-links">
-                <h4>Visitanos</h4>
-                <ul>
-                    <li>📍 Lavalle 944, Corrientes Capital</li>
-                    <li>🕐 Lun-Dom: 11am - 01:00am</li>
-                </ul>
-            </div>
+            
+
         </div>
         <div style="text-align: center; margin-top: 20px;">
             <p>© 2025 DK Comidas Rápidas. Todos los derechos reservados.</p>

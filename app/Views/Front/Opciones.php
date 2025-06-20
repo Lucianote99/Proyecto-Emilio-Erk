@@ -2,6 +2,7 @@
     <link href="assets/CSS/body.css" rel = "stylesheet">
     <link href="assets/CSS/carrusel.css" rel = "stylesheet">
     <link href="assets/CSS/card.css" rel = "stylesheet">
+    
 
 
 <!DOCTYPE html>
@@ -12,6 +13,7 @@
   >
   <script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>>
   <body>
+    
     
     <div class="album py-5 bg-body-tertiary">
     <div class="container">

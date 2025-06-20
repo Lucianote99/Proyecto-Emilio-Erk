@@ -1,35 +1,56 @@
 
-<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/CSS/body.css" rel = "stylesheet">
-    <link href="assets/CSS/carrusel.css" rel = "stylesheet">
-    <link href ="assets/CSS/end-nav.css" rel = "stylesheet">
-    <link href ="assets/CSS/card.css" rel = "stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+ <link href="assets/CSS/carousel.css" rel="stylesheet">
+  <link href="assets/CSS/body.css" rel="stylesheet">
+
+</head>
+
+
 <body>
+  
 <div class="container mt-5 mb-5 d-flex justify-content-center">
-        <div class="card" style="width: 50%;">
-            <div class="card-header2 text-center" style="background-color: hsl(60, 3.20%, 6.10%);">
-                <h2>Iniciar sesión</h2>
+    <div class="col-12 col-sm-10 col-md-6 col-lg-4"> 
+        <div class="card bg-dark text-white">
+            <div class="card-header text-center bg-dark border-0">
+                <h2 class="text-white">Iniciar sesión</h2>
             </div>
-            <form method="post" action="<?php echo base_url('/enviarlogin') ?>">
-                <div class="card-body" style="background-color:rgb(54, 50, 44);">
-                    <div class="col-12 mb-2">
-                        <label for="exampleFormControlInput1" class="form-label">Correo</label>
-                        <input name="email" type="text" class="form-control" placeholder="correo">
+
+            <?php if(session()->getFlashdata('msg')):?>
+                <div class="alert alert-warning text-center">
+                    <?= session()->getFlashdata('msg') ?>
+                </div>
+            <?php endif; ?>  
+
+            <form method="post" action="<?= base_url('/enviarlogin') ?>">
+                <div class="card-body text-center">
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo</label>
+                        <input name="email" type="text" class="form-control" placeholder="Correo" required>
                     </div>
-                    <div class="col-12 mb-2">
-                        <label for="exampleFormControlInput1" class="form-label">Password</label>
-                        <input name="pass" type="password" class="form-control" placeholder="contraseña">
+
+                    <div class="mb-3">
+                        <label for="pass" class="form-label">Contraseña</label>
+                        <input name="pass" type="password" class="form-control" placeholder="Contraseña" required>
                     </div>
-                    <button type="submit" value="Ingresar" class="btn btn-success">Ingresar</button>
-                    <a href="<?php echo base_url('Login'); ?>" class="btn btn-danger">Cancelar</a>
-                    <br>
-                    <span>¿Aún no se registró? <a href="<?php echo base_url('/Registrar'); ?>">Registrarse aquí</a></span>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center my-3">
+                        <button type="submit" class="btn btn-success">Ingresar</button> 
+                        <a href="<?= base_url('login') ?>" class="btn btn-danger">Cancelar</a>
+                    </div>
+
+                    <span>¿Aún no se registró? <a href="<?= base_url('/Registrar') ?>" class="text-info">Registrarse aquí</a></span>
+
                 </div>
             </form>
         </div>
     </div>
+</div>
 
-  <link href = "assets/bootstrap/js/bootstrap.bundle.min.js"> 
 </body>
+   
+  

@@ -57,31 +57,37 @@
   
   }
   
+.card2 .card-body p {
+    font-size: 1.5rem; /* Ajustá el tamaño según prefieras */
+    font-weight: bold;
+}  
  
-  .card2{
-    
-    padding: 0px !important;
-    border-radius: 40px !important;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
-    margin-bottom: 20px; /* Agrega un poco de espacio entre las tarjetas */
-    background-color: #000000d5;
-    
-    
-    box-shadow:
-        0 0 10px #FF4081, /* Color base del "neón" */
-        0 0 10px #FF4081,
-        0 0 15px #FF4081,
-        0 0 20px #FF4081,
-        0 0 25px #FF4081; /* Múltiples sombras para intensificar el brillo */
-    margin: 90px; /* Agrega un poco de espacio entre las tarjetas */
-   
-    position: relative;
-    color: #c5ac8e;
-    width: 100%;
-    border: none !important;
-    position: relative !important;
-    overflow: hidden !important;
+/*.card2 {
+  width: 100%;
+  max-width: 320px;
+  padding: 1rem;
+  margin: 20px auto;
+  border-radius: 20px;
+  background-color: #000000d5;
+  color: #c5ac8e;
+  border: none;
+  overflow: hidden;
+  box-shadow:
+    0 0 10px #FF4081,
+    0 0 15px #FF4081,
+    0 0 20px #FF4081,
+    0 0 25px #FF4081;
 }
+
+/* Responsive ajuste para pantallas menores a 794px */
+/*@media (max-width: 794px) {
+  .card2 {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+}
+*/
+
 
 .section-cards {
     background-color: rgb(228, 228, 183);
@@ -152,3 +158,5 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra para destacar */
 .card-header2{
   color: rgb(234, 227, 227);
 }
+
+

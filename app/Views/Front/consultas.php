@@ -5,68 +5,84 @@
 <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/CSS/body.css" rel = "stylesheet">
     <link href="assets/CSS/carrusel.css" rel = "stylesheet">
-    <link href="assets/CSS/card.css" rel = "stylesheet">
     <link href="assets/CSS/consultas.css" rel = "stylesheet">
-    </head>
+    <link href="assets/CSS/end-nav.css" rel = "stylesheet">
 
+
+  <meta charset="UTF-8">
+  <title>Formulario de Consulta</title>
+  
+  </head>
 
    
-    <body>
-<div class="container mt-5 mb-5 d-flex flex-column align-items-center" style="background-color: #c5ac8e;; width: 100%">
+<body class="bg-light">
 
-  <div class="center-form"> <!-- Alinea el contenido en el centro -->
-  <div class="w-50"> <!-- Ajusta el ancho del formulario -->
-    <h4 class="mb-4 text-center">CONSULTAS</h4>
-    <form class="needs-validation" novalidate>
-      <div class="row g-3"> <!-- Ajusta el espaciado entre filas -->
-        <div class="col-12 col-md-6"> <!-- Ajusta el tamaño de columnas -->
-          <label for="firstName" class="form-label">*Nombre</label>
-          <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-          <div class="invalid-feedback">Valid first name is required.</div>
+
+<div class="container mt-5">
+  <div class="card shadow-lg col-md-8 mx-auto">
+    <div class="card-header bg-dark text-white text-center">
+      <h4>Realizar una Consulta</h4>
+    </div>
+
+    <div class="card-body">
+
+      <?php if (session()->getFlashdata('msg')): ?>
+        <div class="alert alert-success">
+          <?= session()->getFlashdata('msg') ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if (isset($validation)): ?>
+        <div class="alert alert-danger">
+          <?= $validation->listErrors() ?>
+        </div>
+      <?php endif; ?>
+
+      <form id="consultaForm" action="<?= base_url('guardar-consultas') ?>" method="post" novalidate>
+
+        <div class="row mb-3">
+          <div class="col">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="nombre" value="<?= old('nombre') ?>" required>
+          </div>
+          <div class="col">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" name="apellido" value="<?= old('apellido') ?>" required>
+          </div>
         </div>
 
-        <div class="col-12 col-md-6">
-          <label for="lastName" class="form-label">*Apellido</label>
-          <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-          <div class="invalid-feedback">Valid last name is required.</div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" name="email" value="<?= old('email') ?>" required>
         </div>
 
-        <div class="col-12">
-          <label for="email" class="form-label">*Email <span class="text-muted">(Optional)</span></label>
-          <input type="email" class="form-control" id="email" placeholder="you@example.com">
-          <div class="invalid-feedback">Valid email is required.</div>
+        <div class="row mb-3">
+          <div class="col">
+            <label for="ciudad" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" name="ciudad" value="<?= old('ciudad') ?>" required>
+          </div>
+          <div class="col">
+            <label for="pais" class="form-label">País</label>
+            <input type="text" class="form-control" name="pais" value="<?= old('pais') ?>" required>
+          </div>
         </div>
 
-        <div class="col-12 col-md-6">
-          <label for="address" class="form-label">Ciudad</label>
-          <input type="text" class="form-control" id="address" placeholder="Cordoba" required>
-          <div class="invalid-feedback">Please enter your city.</div>
+        <div class="mb-3">
+          <label for="comentario" class="form-label">Comentario</label>
+          <textarea class="form-control" name="comentario" rows="4" required><?= old('comentario') ?></textarea>
         </div>
 
-        <div class="col-12 col-md-6">
-          <label for="country" class="form-label">*País</label>
-          <select class="form-select" id="country" required>
-            <option value="">Choose...</option>
-            <option>United States</option>
-            <option>Argentina</option>
-            <option>Brasil</option>
-            <option>Chile</option>
-            <option>Paraguay</option>
-            <option>Uruguay</option>
-          </select>
-          <div class="invalid-feedback">Please select a valid country.</div>
-        </div>
+       <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-secondary" onclick="document.getElementById('consultaForm').reset()">Limpiar</button>
+        <button type="submit" class="btn btn-primary">Enviar Consulta</button>
+       </div>
 
-        <div class="col-12">
-          <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-      </div>
-      <button type="submit" class="w-100 btn btn-primary mt-3">Enviar</button>
-    </form>
+      </form>
+    </div>
   </div>
- </div>
-</div>       
-<script rel="stylesheet" src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</div>
+
+
+
 </body>
 </html>

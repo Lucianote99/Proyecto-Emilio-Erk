@@ -2,6 +2,8 @@
     <link href="assets/CSS/body.css" rel = "stylesheet">
     <link href="assets/CSS/carrusel.css" rel = "stylesheet">
     <link href="assets/CSS/card.css" rel = "stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   
 
 
 

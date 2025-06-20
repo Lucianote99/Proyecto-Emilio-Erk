@@ -6,51 +6,63 @@ class Home extends BaseController
 {
     public function index()
     {
-    	echo view('front/nav-view.php');
-        echo view('front/principal.php');
-        echo view('front/end-view.php');
+    	  echo view('Views/Front/nav-view');
+        echo view('Views/Front/principal');
+        echo view('Views/Front/end-view');
     }
 
     public function productos()
     {
-      echo view('front/nav-view.php');  
-      echo view('front/Productos.php');
-      echo view('front/end-view.php');
+      echo view('Views/Front/nav-view');  
+      echo view('Views/Front/Productos');
+      echo view('Views/Front/end-view');
     }
 
     public function Comercializacion()
     {
-       echo view('front/nav-view.php');  
-       echo view('front/Comercializacion.php');
-       echo view('front/end-view.php');
+       echo view('Views/Front/nav-view');  
+       echo view('Views/Front/Comercializacion');
+       echo view('Views/Front/end-view');
     }
 
     public function quienessomos()
     {
-       echo view('front/nav-view.php');   
-       echo view('front/quienessomos.php');
-       echo view('front/end-view.php');
+       echo view('Views/Front/nav-view');   
+       echo view('Views/Front/quienessomos');
+       echo view('Views/Front/end-view');
     }
 
     public function consultas()
     {
-       echo view('front/nav-view.php');   
-       echo view('front/consultas');
-       echo view('front/end-view.php');
+       echo view('Views/Front/nav-view');   
+       echo view('Views/Front/consultas');
+       echo view('Views/Front/end-view');
     }
 
     public function terminosycondiciones ()
     {
-        echo view('front/nav-view.php');
-        echo view('front/terminosycondiciones.php');
-        echo view('front/end-view.php');   
+        echo view('Views/Front/nav-view');
+        echo view('Views/Front/terminosycondiciones');
+        echo view('Views/Front/end-view');   
+    }
+    
+    public function Login ()
+    {
+        echo view('Views/Front/nav-view');
+        echo view('Views/Front/Login');
+
     }
 
-    public function login()
-    {
-       echo view('front/nav-view.php');   
-       echo view('front/login.php');
-       echo view('front/end-view.php');
+     public function Registrar (){
+        echo view('nav-view.php');
+        echo view('Registrar.php');
     }
+
+    public function faqs()
+    {
+        echo view('Views/Front/nav-view');
+        echo view('Front/FAQs');
+    }
+    
 
 }

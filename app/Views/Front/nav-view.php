@@ -1,72 +1,147 @@
-  <!DOCTYPE html>
-  <html>
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="">
-      <link href="assets/CSS/estnavbar.css" rel = "stylesheet">
-      <link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
-      
+<?php
+$session = session();
+$nombre = $session->get('nombre');
+$perfil = $session->get('perfil_id');
+$logged = $session->get('logged_in');
+
+    $session = session();
+    $cart = \Config\Services::cart();
+    $cart->contents();
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <!-- Bootstrap 4 CSS -->
+    <link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link href="<?php echo base_url('assets/CSS/estilo.css') ?>" type="text/css" rel="stylesheet">
+    <script src="<?php echo base_url('assets/bootstrap/js/bootstrap.bundle.min.js') ?>" type="text/javascript"></script>
+</head>
+<body>
+       
+        <?php if($logged){?>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <?php if($perfil == 1){?>
+            <div class="btn btn-info active btnUser btn-sm">
+                <a href="#">Admin: <?php echo $nombre; ?></a>
+            </div>
+        <?php }else{?>
+    <div class="d-flex justify-content-center" style="align-items: center">
+                <p style="font-size: 12px"> <span style="color: blue">Cliente: <?php echo $nombre; ?></span></p>
+    </div>      
+        <?php }?>
 
 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
 
 
-  </head>
+        <?php if ($perfil == 1){ ?>
+   
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="<?php echo base_url('Crud_Usuario'); ?>">CRUD Usuarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="<?php echo base_url('Crud_Producto'); ?>">CRUD productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="<?php echo base_url('ventas'); ?>" tabindex="-1" aria-disabled="true">Muestra Ventas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="<?php echo base_url('listar-consultas'); ?>" tabindex="-1" aria-disabled="true">Consultas</a>
+                    </li>
 
 
-    <body>
-      <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-        <symbol id="check2" viewBox="0 0 16 16">
-          <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-        </symbol>
-        <symbol id="circle-half" viewBox="0 0 16 16">
-          <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-        </symbol>
-        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-          <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-          <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-        </symbol>
-        <symbol id="sun-fill" viewBox="0 0 16 16">
-          <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-        </symbol>
-      </svg>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-    <div class="container-fluid justify-content-center">
-        <a class="navbar-brand" href="<?php echo base_url('DK') ?>">DK</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="<?php echo base_url('Productos') ?>">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url('Comercializacion') ?>">Comercializacion</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url('quienessomos') ?>">¿Quines Somos?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url('consultas') ?>">Consultas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url('login') ?>">Login</a>
-                </li>
-            </ul>
-        </div>
-        <div class="d-flex">
-            <a class="nav-link" href="<?php echo base_url('assets/img/Carrito.jpg') ?>">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.58 6.427A.5.5 0 0 1 13 11h-9.5a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 5h8.17l1.313-5H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                </svg>
-                <span class="visually-hidden">Carrito</span>
-            </a>
-        </div>
+       <?php  } else { 
+
+
+    $cont = $cart->totalItems();?>
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 active" aria-current="page" href="<?php echo base_url('inicio'); ?>">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="<?php echo base_url('Productos'); ?>">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="<?php echo base_url('Carrito'); ?>">Carrito <span style="color: green"><?php echo $cont ?></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="<?php echo base_url('post-venta'); ?>">Resumen Venta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="<?php echo base_url('quienessomos'); ?>" tabindex="-1" aria-disabled="true">¿Quienes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="<?php echo base_url('consultas'); ?>" tabindex="-1" aria-disabled="true">Consultas</a>
+                    </li>
+
+ <?php }?>
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="<?php echo base_url('Logout'); ?>" tabindex="-1" aria-disabled="true">Cerrar Sesión</a>
+                    </li>
+
+                </ul>
+            </div>
+    </div>
+</nav>
+<?php } else {?>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 active" aria-current="page" href="<?php echo base_url('inicio'); ?>">Home</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="<?php echo base_url('Productos'); ?>">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="<?php echo base_url('quienessomos'); ?>" tabindex="-1" aria-disabled="true">¿Quienes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="<?php echo base_url('consultas'); ?>" tabindex="-1" aria-disabled="true">Consultas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="<?php echo base_url('Login'); ?>" tabindex="-1" aria-disabled="true">Iniciar Sesion</a>
+                    </li>
+
+
+                </ul>
+            </div>
+     
+     
+  
     </div>
 </nav>
 
-      <script src="<?php echo base_url('assets/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
-      <script src="<?php echo base_url('assets/JS/script.js') ?>"></script>
-    </body>   
+
+
+<?php } ?>
+
+<!-- Bootstrap 4 JavaScript -->
+<!-- jQuery primero, luego Popper, luego Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
 </html>

@@ -1,85 +1,270 @@
+/* GENERALES */
+body {
+    background-color: #000000 !important; /* Fondo negro para todo el body */
+    color: #f8f9fa; /* Color de texto claro por defecto para que sea legible */
+    font-family: Arial, sans-serif; /* Puedes especificar una fuente si quieres */
+}
+
+/* IMAGEN DE PORTADA */
 .imagen-portada {
-    width: 100%; 
-    display: block; 
-    
-    height: 700px;
-    overflow: hidden;
-    margin-top: 0%;
-}
-
-.seccion-color {
-    background-color: #ded953;
-    padding: 40px; 
-    position: relative; 
-    text-align: center; 
-  }
-
-  .seccion{
-   
-    position: relative; 
-    text-align: center; 
-  }
-
-  .body{
-    background-color: rgb(36, 31, 31) !important;
-  }
-
-  
-
-  .contenedor-imagen-translucido {
-    position: relative; /* Establece el contexto de posicionamiento para las capas internas */
-    width: 100%; /* O el ancho que desees */
-    /* Asegúrate de que tenga una altura adecuada para tu contenido */
-    margin-bottom: 50px;
-  }
-  
-  .contenedor-imagen-translucido img {
     width: 100%;
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Evita espacios extra debajo de la imagen */
-  }
-  
-  .capa-translucida {
-    position: absolute; /* Permite superponer esta capa sobre la imagen */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    display: flex; /* Para centrar el texto fácilmente */
-    flex-direction: column; /* Apila los elementos verticalmente */
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    color: white; /* Color del texto encima */
-    text-align: center; /* Alinea el texto al centro */
-    width: 100%;
-  }
-  
-  .texto-encima {
-    margin-bottom: 10px; 
-    width: 100%;
-  }
-
-  .tarjeta-quienes .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    border-color: #ffca2c;
-}
-
-/* Imagen cuadrada responsiva */
-.sq-im {
-    width: 100%;
-    height: 300px;
+    display: block;
+    height: 450px; /* Altura de la imagen de portada */
     object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 10px;
+    overflow: hidden;
+    margin-top: 0;
+    filter: brightness(0.6); /* Oscurece la imagen para que el texto encima (si lo hubiera) sea legible */
+    margin-bottom: 70px; /* Aumenta este valor para más espacio */
 }
 
-/* Título del staff */
+/* SECCIÓN "¿Qué hacemos?" */
+.seccion-color {
+    background-color: #000000;
+    padding: 40px 30px;
+    position: relative;
+    text-align: center;
+    color: #f8f9fa;
+    margin-bottom: 80px; /* Aumentado de 50px a 80px (puedes ajustar a tu gusto) */
+    border: 1px solid #333333;
+    border-radius: 10px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.seccion-color h1, .seccion-color h5 {
+    color: #ffffff; /* Asegura que los títulos y subtítulos sean blancos */
+    margin-bottom: 20px; /* Espacio debajo del h1 y h5 */
+}
+
+/* SECCIÓN "Gracias a la inspiración..." */
+.seccion {
+    background-color: #000000; /* Fondo negro puro para el recuadro */
+    padding: 40px 30px; /* Padding interno del recuadro */
+    position: relative;
+    text-align: center;
+    color: #f8f9fa;
+    margin-bottom: 50px; /* Espacio debajo de esta sección */
+    border: 1px solid #333333; /* Borde oscuro sutil */
+    border-radius: 10px; /* Bordes redondeados para el recuadro */
+    max-width: 900px; /* **Ancho máximo para el recuadro de texto** */
+    margin-left: auto; /* Centrar el bloque horizontalmente */
+    margin-right: auto; /* Centrar el bloque horizontalmente */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.seccion h5 {
+    color: #f8f9fa; /* Asegura que el texto sea claro */
+}
+
+
+/* SECCIÓN "CONOCE A NUESTRO STAFF" (Album) */
+.album {
+    background-color: #0d0d0d !important; /* Fondo ligeramente diferente para destacar el bloque del staff */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-bottom: 70px; /* Aumenta este valor para más espacio */
+}
+
 .album h1 {
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     margin-bottom: 30px;
-    background-color: rgb(36, 31, 31) !important;
+    background-color: rgb(36, 31, 31) !important; /* Mantener tu color original si te gusta este gris oscuro para el h1 */
+    color: #ffffff !important;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Tarjetas del staff (mantener las del CSS anterior) */
+.tarjeta-quienes {
+    margin-bottom: 20px;
+}
+
+.tarjeta-quienes .card {
+    background-color: #242424;
+    color: #f8f9fa;
+    border: 1px solid #444;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tarjeta-quienes .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border-color: #ffc107;
+}
+
+.sq-im {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.tarjeta-quienes .card-body {
+    padding: 20px;
+}
+
+.tarjeta-quienes .card-body p {
+    color: #f8f9fa;
+    margin-bottom: 5px;
+}
+.tarjeta-quienes .card-body p.fw-normal {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* SECCIONES DE IMAGEN CON OVERLAY ("Lugar" y "Corazón de hamburguesas") */
+/* Este es el contenedor principal de cada tarjeta de imagen con texto */
+.contenedor-imagen-translucido {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px; /* Espacio entre las dos tarjetas y con la sección de abajo */
+    border-radius: 10px; /* Bordes redondeados para el contenedor */
+    overflow: hidden; /* Asegura que la imagen y la capa respeten los bordes */
+}
+
+/* Estilos para la imagen dentro de la tarjeta */
+.contenedor-imagen-translucido img {
+    width: 100%;
+    min-height: 250px; /* Altura mínima para la imagen en pantallas grandes */
+    height: auto;       /* Permite que la altura del contenedor se ajuste al contenido (texto) */
+    max-height: 350px; /* Altura máxima para la imagen en pantallas muy grandes */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    display: block;    /* Elimina espacio extra debajo de la imagen */
+    filter: brightness(0.5); /* Oscurece la imagen para que el texto encima sea legible */
+    transition: filter 0.3s ease-in-out; /* Suave transición al pasar el ratón */
+}
+
+.contenedor-imagen-translucido:hover img {
+    filter: brightness(0.7); /* Aclara la imagen al pasar el ratón */
+}
+
+/* Estilos para la capa de texto semitransparente que se superpone a la imagen */
+.capa-translucida {
+    position: absolute; /* Permite que esta capa se superponga a la imagen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ocupa el 100% de la altura de su padre (.contenedor-imagen-translucido) */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semitransparente */
+    display: flex; /* Utiliza Flexbox para centrar el contenido */
+    flex-direction: column; /* Organiza el contenido en columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    color: white; /* Color del texto */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 20px; /* Espaciado interno de la capa */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho/alto total */
+}
+
+/* Estilos para el texto dentro de la capa (título y párrafo) */
+.texto-encima {
+    margin-bottom: 15px; /* Espacio debajo del título */
+    width: 90%; /* Limita el ancho del texto para mejor lectura */
+    max-width: 600px; /* Evita que el texto se estire demasiado en pantallas grandes */
+    padding: 0 10px; /* Pequeño padding horizontal para el texto mismo */
+}
+
+.texto-encima h5 {
+    font-size: 2rem; /* Tamaño de fuente para el título */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Sombra para mejor contraste */
+    color: #fff;
+}
+
+.texto-encima p {
+    font-size: 1.1rem; /* Tamaño de fuente del párrafo */
+    line-height: 1.7; /* Mayor interlineado para mejor legibilidad */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    color: #f8f9fa;
+    word-wrap: break-word;    /* Permite que palabras largas se rompan y se envuelvan */
+    overflow-wrap: break-word; /* Otra propiedad para romper palabras largas */
+}
+
+
+/* --- MEDIA QUERIES para asegurar la responsividad en diferentes tamaños de pantalla --- */
+
+@media (max-width: 991.98px) { /* Laptops pequeñas y tablets (ej. 768px - 991px) */
+    .contenedor-imagen-translucido img {
+        min-height: 200px; /* Ajuste de altura mínima de imagen */
+        max-height: 300px; /* Ajuste de altura máxima de imagen */
+    }
+    .texto-encima h5 {
+        font-size: 1.6rem; /* Reducir tamaño de título */
+    }
+    .texto-encima p {
+        font-size: 1rem; /* Reducir tamaño de párrafo */
+    }
+    .capa-translucida {
+        padding: 15px; /* Reducir padding de la capa */
+    }
+}
+
+@media (max-width: 767.98px) { /* Tablets pequeñas y móviles (ej. hasta 767px) */
+    .contenedor-imagen-translucido {
+        margin-bottom: 30px; /* Reducir margen entre tarjetas en móviles */
+    }
+    .contenedor-imagen-translucido img {
+        min-height: 180px; /* Más ajuste de altura mínima */
+        max-height: 250px; /* Más ajuste de altura máxima */
+    }
+    .texto-encima h5 {
+        font-size: 1.3rem; /* Más pequeño para título en móvil */
+    }
+    .texto-encima p {
+        font-size: 0.85rem; /* Más pequeño para párrafo en móvil */
+        line-height: 1.5; /* Ajustar interlineado */
+    }
+    .capa-translucida {
+        padding: 10px; /* Más reducción de padding */
+    }
+}
+
+@media (max-width: 575.98px) { /* Móviles muy pequeños (ej. hasta 575px) */
+    .contenedor-imagen-translucido img {
+        min-height: 150px; /* Altura mínima para pantallas muy pequeñas */
+        max-height: 200px; /* Altura máxima para pantallas muy pequeñas */
+    }
+    .texto-encima h5 {
+        font-size: 1.1rem; /* Aún más pequeño el título */
+    }
+    .texto-encima p {
+        font-size: 0.8rem; /* Aún más pequeño el párrafo */
+    }
+    .capa-translucida {
+        padding: 8px; /* Padding mínimo */
+    }
+}
+
+/* SECCIÓN DE UBICACIÓN - ESTOS SON LOS CAMBIOS AGREGADOS Y AJUSTADOS */
+.container.my-5.animate__animated .row.align-items-center {
+    background-color: #1a1a1a !important; /* Fondo gris oscuro o negro para el recuadro de ubicación */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Sombra para profundidad */
+    padding: 30px !important; /* Espaciado interno */
+    border: 1px solid #333; /* Borde sutil */
+}
+
+/* Selector más específico para el título "UBICACIÓN" */
+.container.my-5.animate__animated .row.align-items-center .display-5 {
+    color: #f8f9fa !important; /* Fuerza el color blanco */
+    font-weight: 600 !important; /* Asegura el peso de fuente si Bootstrap lo anula */
+    /* Posiblemente necesites margin-bottom si el texto se pega al de abajo */
+    margin-bottom: 1rem !important; /* Añade un pequeño margen inferior si es necesario */
+}
+
+/* Selector más específico para los párrafos de la dirección, teléfono, etc. */
+.container.my-5.animate__animated .row.align-items-center p.fw-normal {
+    color: #f8f9fa !important; /* Fuerza el color blanco */
+    margin-bottom: 0.5rem !important; /* Espacio entre los párrafos */
+}
+
+/* Asegura que cualquier otro texto dentro de esa columna también sea blanco, si lo hubiera */
+.container.my-5.animate__animated .row.align-items-center .col-md-6.text-md-start.text-center {
+    color: #f8f9fa !important;
 }

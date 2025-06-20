@@ -1,44 +1,62 @@
-.payment-methods-container {
-    margin-left: auto;
-    margin-right: auto;
-    display: block; /* Asegúrate de que sea un elemento de bloque */
-    max-width: 600px; /* O el ancho máximo que desees para el contenedor */
-    width: 100%; /* Para que ocupe el ancho disponible dentro del max-width */
-    text-align: center; /* Opcional: centra el texto dentro del contenedor */
+/* Fondo blanco general */
+body {
+    background-color: #ffffff !important;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
+/* Estilo general del contenedor */
+.payment-methods-container {
+    margin: 2rem auto;
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Título centrado */
 .payment-methods-container h3 {
-    text-align: center; /* Asegura que el título también esté centrado */
+    text-align: center;
     margin-bottom: 15px;
 }
 
+/* Lista de métodos de pago */
 .payment-methods-container ul {
-    justify-content: center !important; /* Sobrescribe el justify-content que tenías para centrar los elementos de la lista */
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 .payment-methods-container ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .payment-methods-container ul li img {
     margin-bottom: 5px;
+    height: 40px;
 }
+
+/* Estilos para acordeón */
 .accordion-button {
     background-color: #fff;
     color: #000;
     font-weight: bold;
     border: none;
     box-shadow: none;
+    border-radius: 0.5rem !important;
 }
 
 .accordion-button:not(.collapsed) {
     background-color: #e7f1ff;
     color: #000;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
 
 .accordion-item {
@@ -46,40 +64,36 @@
     border: 1px solid #ddd;
     border-radius: 0.5rem;
     margin-bottom: 10px;
+    overflow: hidden; /* Para redondear bordes del body también */
+}
+
+/* Redondeo del último acordeón */
+.accordion-item:last-child {
+    margin-bottom: 0;
 }
 
 .accordion-body {
     background-color: #f8f9fa;
     color: #333;
+    padding: 1rem;
+    font-size: 1.7rem;
 }
 
-.payment-accordion {
-    background-color: transparent;
-    border: none;
+/* Asegura responsividad general */
+@media (max-width: 576px) {
+    .payment-methods-container {
+        width:105%;
+    }
+
+    .payment-methods-container ul {
+        flex-direction: column;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+    }
 }
 
-.payment-methods img {
-    height: 40px;
-    margin: 5px;
-}
-s
-body{
-    background-color: hsl(0, 4%, 5%) !important;
-}
-.payment-accordion {
-    background-color: #fff;
-}
-
-.payment-accordion .accordion-header button {
-    background-color: #f8f9fa;
-    color: #333;
-}
-
-.payment-accordion .accordion-header button:not(.collapsed) {
-    background-color: #e9ecef;
-}
-
-.payment-accordion .accordion-body {
-    background-color: #f8f9fa;
-    color: #333;
+.animate__animated.animate__flipInX {
+  --animate-duration: 10s;
 }
